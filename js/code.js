@@ -54,7 +54,7 @@ $("#lapReset").click(function(){
         //create new lap div and store it
         $("#lapStore").prepend(`
         <div class="row">
-            <div class="col-xs-6"><p>Lap${lapNum}</p></div>
+            <div class="col-xs-6"><input type="text" value="Lap${lapNum}"></div>
             <div class="time col-xs-6"><p>${$("#lapCounting").find("p").text()}</p></div>
         </div>`);
         //increase the number of laps, clear the lap-time interval, and set all lap-time's variables to 0

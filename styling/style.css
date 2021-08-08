@@ -75,8 +75,14 @@ body {
   margin-top: auto;
 }
 
+#lapStore input {
+  background-color: transparent;
+  border: none;
+}
+
 .row {
   border-top: 1px solid white;
+  padding-top: 5px;
 }
 
 .row:first-child {
