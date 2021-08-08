@@ -1,0 +1,86 @@
+//set background picture and style overview of the page
+body{
+    background: url("https://freenaturestock.com/wp-content/uploads/freenaturestock-1785-1024x683.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+}
+//style header
+#header h1{
+    font-size: 7vw; //7% the width of the viewport
+}
+//style main-time part
+#mainCounting{
+    height: fit-content;
+    width: fit-content;
+    p{
+        font-size: 9vw;
+    }
+    button{
+        background-color: #DEA14C;
+        color: white;
+        font-size: 30px;
+        padding: 0;
+        height: 130px;
+        width: 130px;
+        border-radius: 100%;
+        margin: 0 45px;
+    }
+    button:active{
+        background-color: white;
+        color: #DEA14C;
+    }
+}
+//style lap-time part
+#lapCounting{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 120px;
+    right: 10px;
+    font-size: 3.5vw;
+}
+//style lap storing part
+#lapStore{
+    text-align: justify;
+    font-size: 30px;
+    width: 100%;
+    height: 120px;
+    overflow-y: scroll;
+    margin-top: auto;
+}
+.row{
+    border-top: 1px solid white;
+    &:first-child{
+        border: none;
+    }
+}
+.time{
+    text-align: right;
+}
+
+//set header, main-time, and lap-time to be smaller when screen's width is 768px or lower
+@media screen and (max-width: 768px) {
+    #header{
+        margin-top: 30px;
+    }
+    #mainCounting{
+        margin-top: 70px;
+        button{
+            font-size: 20px;
+            height: 80px;
+            width: 80px;
+            margin: 0 25px;
+        }
+    }
+    #lapStore{
+        height: 300px;
+        font-size: 25px;
+    }
+}

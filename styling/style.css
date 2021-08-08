@@ -1,0 +1,108 @@
+body {
+  background: url("https://freenaturestock.com/wp-content/uploads/freenaturestock-1785-1024x683.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 98vh;
+}
+
+#header h1 {
+  font-size: 7vw;
+}
+
+#mainCounting {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#mainCounting p {
+  font-size: 9vw;
+}
+
+#mainCounting button {
+  background-color: #DEA14C;
+  color: white;
+  font-size: 30px;
+  padding: 0;
+  height: 130px;
+  width: 130px;
+  border-radius: 100%;
+  margin: 0 45px;
+}
+
+#mainCounting button:active {
+  background-color: white;
+  color: #DEA14C;
+}
+
+#lapCounting {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 120px;
+  right: 10px;
+  font-size: 3.5vw;
+}
+
+#lapStore {
+  text-align: justify;
+  font-size: 30px;
+  width: 100%;
+  height: 120px;
+  overflow-y: scroll;
+  margin-top: auto;
+}
+
+.row {
+  border-top: 1px solid white;
+}
+
+.row:first-child {
+  border: none;
+}
+
+.time {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    margin-top: 30px;
+  }
+  #mainCounting {
+    margin-top: 70px;
+  }
+  #mainCounting button {
+    font-size: 20px;
+    height: 80px;
+    width: 80px;
+    margin: 0 25px;
+  }
+  #lapStore {
+    height: 300px;
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

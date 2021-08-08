@@ -1,0 +1,14 @@
+{
+  "name": "stop-watch",
+  "version": "1.0.0",
+  "description": "A stopwatch web app, using HTML, CSS, SASS, JQuery, and Bootstrap, inspired from Apple's stopwatch app",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass styling/style.scss styling/style.css"
+  },
+  "author": "Manh Dinh",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
